@@ -1,3 +1,3 @@
 # hello-world
 
-this is updated bu lowo;
+this is updated by lowo;
