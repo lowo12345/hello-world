@@ -9,15 +9,12 @@
 #include <QMessageBox>
 #include "character.h"
 
-char ch='0';
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
 
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-
 }
 
 MainWindow::~MainWindow()
@@ -92,10 +89,10 @@ void MainWindow::paintEvent(QPaintEvent *event)
     // 设置画笔颜色
     painter.setPen(QColor(100, 160, 230));
 
-    // 设置字体：微软雅黑、点大小50、斜体
+    // 设置字体：微软雅黑、点大小40、斜体
     QFont font;
     font.setFamily("Microsoft YaHei");
-    font.setPointSize(80);
+    font.setPointSize(40);
     painter.setFont(font);
 
     // 绘制文本
@@ -104,18 +101,6 @@ void MainWindow::paintEvent(QPaintEvent *event)
 
     painter.drawText(rect, Q.display());          // 创建QPainter一个对象
 
-  /*  // 画一条直线
-    QPen pen;
-    pen.setColor(Qt::yellow);           // 设置画笔为黄色
-    painter.setPen(pen);                // 设置画笔
-    painter.drawLine(rect().topLeft(), rect().bottomRight());
 
-    // 画一个空心矩形
-    pen.setColor(Qt::darkRed);
-    painter.setPen(pen);
-    painter.drawRect(QRect(1, 1, 100, 100));
-
-
-*/
 }
 
